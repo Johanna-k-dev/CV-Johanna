@@ -1,0 +1,242 @@
+/* Styles CSS par defaut */
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.contener{
+    padding: 1px;
+}
+header{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9NSJ7MpbsMNPnoCcv2ajtHv3JTKqPPZH6Q&s");
+    color: white;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h3{
+    align-self: center;
+}
+
+.pied{
+    height: 250px;
+    background-color: #6D5EFF;
+}
+
+/* Styles des élément contenuent dans main */
+/* Titres */
+
+hgroup{
+    background-color: black;
+}
+
+/* Nav barre */
+nav{
+    max-width:100% ;
+    height:50px ;
+}
+
+nav ul {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-self: center;
+flex-wrap: wrap;
+}
+
+.nav-option{
+    border-radius: 100%;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+    list-style: none;color: white;
+    background-color: black;
+}
+
+nav li :hover{
+ background-color: white;
+ color: black;
+ box-shadow: 5px 5px 15px 5px #6D5EFF;
+}
+
+/* Aside et contenue */
+
+.section-aside{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Aside */
+
+.lateral-barre{
+    margin: 2px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10%;
+    gap: 20px;
+}
+
+/* Contenue Aside */
+
+.portrait{
+    max-width: 300px;
+    border-radius: 100%;
+}
+
+/* Contenue section */
+
+.contenue{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenue article{
+    background-color: #f1d3fa;
+    display: flex;
+    justify-content: space-around;
+}
+article{
+    max-width: 600px;
+    display:flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.titre-image{
+    display: flex;
+    flex-direction: row;
+    
+}
+.image-article{
+    border-radius: 100%;
+   width: 300px;
+}
+
+
+/* Contenue formation */
+
+.contenu-formation{
+    max-width: 700px;
+    flex-wrap: wrap;
+}
+.articles{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Contenu compétences */
+.competences-langages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.Langages{
+    max-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.image-langage{
+    width: 100px;
+    height: 100px;
+}
+#java{
+    background-color: white;
+}
+table{
+    background-color: #6D5EFF;
+    border-radius: 20px;
+}
+
+/* Contenu projet */
+
+.logo-github{
+width: 50px;
+height: 50px;
+display: flex;
+justify-self: center;
+}
+
+
+/* Formulaire de contact */
+
+.section-formulaire{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset{
+    
+     
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+legend{
+    font-size: large;
+    font-weight: bolder;
+}
+form{
+    max-width: 900px;
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+.label-input{
+    display: flex;
+    flex-direction: row;
+}
+.submit-button{
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #6D5EFF;
+    display: flex;
+    align-self: center;
+    color: white;
+    font-weight: bold;
+}
+
+/* responsive */
+
+@media (max-width: 768px){
+    header{
+        min-width: 760px;
+    }
+    .articles{
+        display: flex;
+        flex-direction: column;
+    }
+    table{
+        display: none;
+    }
+}
