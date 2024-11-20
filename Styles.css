@@ -2,7 +2,7 @@
 * {
     margin: 0%;
     box-sizing: border-box;
-    padding: 5px;
+    padding:0%;
 }
 html{
     padding: 0;
@@ -17,6 +17,7 @@ body{
     padding: 1px;
 }
 header{
+    margin-right: 2px;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -53,6 +54,8 @@ hgroup{
 nav{
     max-width:100% ;
     height:50px ;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul {
@@ -64,6 +67,7 @@ flex-wrap: wrap;
 }
 
 .nav-option{
+    margin: 5px;
     border-radius: 100%;
     font-size: large;
     font-weight: bolder;
@@ -78,10 +82,12 @@ nav li :hover{
  box-shadow: 5px 5px 15px 5px #6D5EFF;
 }
 
+nav ul{
+    margin: 10px;
+}
 /* Aside et contenue */
 
 .section-aside{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -90,6 +96,7 @@ nav li :hover{
 
 .lateral-barre{
     margin: 2px;
+    padding: 2px;
     max-width: 360px;
     display: flex;
     flex-direction: column;
@@ -98,6 +105,7 @@ nav li :hover{
     border-radius: 10%;
     gap: 20px;
 }
+
 
 /* Contenue Aside */
 
@@ -119,21 +127,26 @@ nav li :hover{
     justify-content: space-around;
 }
 article{
-    max-width: 600px;
+    margin: 2px;
+    padding: 10px;
     display:flex;
     flex-direction: column;
     margin: 5px;
     border-radius: 20px;
 }
-
+article h3{
+    margin: 5px;
+}
 .titre-image{
+    margin: 5px;
     display: flex;
     flex-direction: row;
+    gap: 4px;
     
 }
 .image-article{
     border-radius: 100%;
-   width: 300px;
+    width: 300px;
 }
 
 
@@ -144,8 +157,14 @@ article{
     flex-wrap: wrap;
 }
 .articles{
+    margin: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+}
+article li{
+    margin: 5px;
 }
 
 /* Contenu compétences */
@@ -169,6 +188,7 @@ article{
     background-color: white;
 }
 table{
+    margin: 5px;
     background-color: #6D5EFF;
     border-radius: 20px;
 }
@@ -180,6 +200,9 @@ width: 50px;
 height: 50px;
 display: flex;
 justify-self: center;
+}
+.logo-github:hover{
+    box-shadow: #6D5EFF;
 }
 
 
@@ -193,7 +216,7 @@ justify-self: center;
 
 fieldset{
     
-     
+     margin: 5px;
     align-self: center;
     display: flex;
     justify-content: center;
@@ -204,17 +227,23 @@ legend{
     font-weight: bolder;
 }
 form{
+    padding: 5px;
     max-width: 900px;
-    
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
    
 }
+form label{
+    margin: 5px;
+}
 .label-input{
+    
     display: flex;
     flex-direction: row;
 }
 .submit-button{
+    margin: 5px;
     width: 150px;
     height: 50px;
     border: none;
@@ -225,6 +254,19 @@ form{
     color: white;
     font-weight: bold;
 }
+footer{
+    min-width: 768px;
+    margin-top: 10px;
+    padding: 5px;
+    height: 100px;
+    background-color: #6D5EFF;
+    display: flex;
+    align-items: center;
+}
+footer a{
+    
+    color: white;
+}
 
 /* responsive */
 
@@ -232,11 +274,34 @@ form{
     header{
         min-width: 760px;
     }
-    .articles{
+    .section-aside{
         display: flex;
         flex-direction: column;
     }
+    .lateral-barre{
+        min-width: 100%;
+        min-height: 100%;
+        margin-left: 20px;
+    }
+    .lateral-barre article{
+        display: flex;
+        align-items: center;
+    }
+    .titre-image{
+        justify-content: space-between;
+    }
+    article{
+        margin-left: 30px;
+    }
+    .articles{
+        display: flex;
+        flex-direction: column;
+        
+    }
     table{
+        display: none;
+    }
+    #article-langage{
         display: none;
     }
 }
