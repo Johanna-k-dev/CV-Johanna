@@ -125,6 +125,7 @@ nav ul{
     background-color: #f1d3fa;
     display: flex;
     justify-content: space-around;
+    
 }
 article{
     margin: 2px;
@@ -133,6 +134,7 @@ article{
     flex-direction: column;
     margin: 5px;
     border-radius: 20px;
+    box-shadow: #6D5EFF;
 }
 article h3{
     margin: 5px;
@@ -141,12 +143,14 @@ article h3{
     margin: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: 4px;
     
 }
 .image-article{
     border-radius: 100%;
     width: 300px;
+    
 }
 
 
