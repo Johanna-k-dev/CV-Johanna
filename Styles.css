@@ -12,6 +12,9 @@ body{
     margin: 0;
     padding: 2px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image:url(Asset/Background.png) ;
+    background-size: cover;
+    gap: 2px;
 }
 .contener{
     padding: 1px;
@@ -22,10 +25,13 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9NSJ7MpbsMNPnoCcv2ajtHv3JTKqPPZH6Q&s");
     color: white;
     align-items: center;
     
+}
+.push{
+    max-width: 100%;
+    min-height: 150px;
 }
 li{
     list-style: none;
@@ -34,10 +40,27 @@ a{
     color: black;
     text-decoration: none;
 }
+hgroup h1 h2{
+    font-weight: bolder;
+}
 h3{
+    color: white;
     align-self: center;
 }
-
+h4{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 20px;
+}
+.titre-image h3{
+    font-weight: bolder;
+    color:#9514B3  ;
+    
+}
+article li{
+    margin: 10px;
+}
 .pied{
     height: 250px;
     background-color: #6D5EFF;
@@ -46,40 +69,35 @@ h3{
 /* Styles des élément contenuent dans main */
 /* Titres */
 
-hgroup{
-    background-color: black;
-}
+
 
 /* Nav barre */
+
 nav{
     max-width:100% ;
-    height:50px ;
-    display: flex;
-    justify-content: space-around;
+    height:120px ;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo9NSJ7MpbsMNPnoCcv2ajtHv3JTKqPPZH6Q&s");
+
+    
 }
 
-nav ul {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-self: center;
-flex-wrap: wrap;
+
+.navbar-toggler{
+    background-color: #6D5EFF!important;
+}
+.navbar-toggler :hover{
+    box-shadow: 5px 5px 15px 5px #f1d3fa;
 }
 
-.nav-option{
-    margin: 5px;
-    border-radius: 100%;
-    font-size: large;
-    font-weight: bolder;
-    color: white;
-    list-style: none;color: white;
-    background-color: black;
+.navbar-toggler-icon{
+    
 }
 
 nav li :hover{
- background-color: white;
- color: black;
- box-shadow: 5px 5px 15px 5px #6D5EFF;
+ 
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px #6D5EFF;
+ ;
 }
 
 nav ul{
@@ -110,6 +128,7 @@ nav ul{
 /* Contenue Aside */
 
 .portrait{
+    margin: 30px;
     max-width: 300px;
     border-radius: 100%;
 }
@@ -122,7 +141,7 @@ nav ul{
 }
 
 .contenue article{
-    background-color: #f1d3fa;
+   color: #f1d3fa;
     display: flex;
     justify-content: space-around;
     
@@ -134,13 +153,14 @@ article{
     flex-direction: column;
     margin: 5px;
     border-radius: 20px;
-    box-shadow: #6D5EFF;
+    
 }
 article h3{
     margin: 5px;
 }
 .titre-image{
-    margin: 5px;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -157,33 +177,93 @@ article h3{
 /* Contenue formation */
 
 .contenu-formation{
-    max-width: 700px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 500px;
+    
+}
+.contenu-formation p{
+    padding: 10px;
+    max-width:400px ;
     flex-wrap: wrap;
 }
-.articles{
-    margin: 5px;
+
+.fieldset{
+    max-width: 500px;
+    height: 500px;
+    padding: 15px;
     display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    opacity:0.6 ;
+}
+.fieldset p{
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#fieldset1:hover{
+    background-color: transparent !important;
+    border: solid 2px #9514B3;
+    opacity: 1;
+}
+#fieldset1{
+    color: cornflowerblue;
+}
+#fieldset1 legend{
+    color:#f1d3fa;
+}
+#fieldset2:hover{
+background-color: transparent !important;
+border: solid 2px #9514B3;
+opacity: 1;
+}
+.fieldset legend{
+    margin: 10px;
+    display: flex;
+    justify-self: center;
+    
+}
+.articles{
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap !important;
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
 }
-article li{
-    margin: 5px;
+.liste-formation{
+    margin: 20px;
+    padding: 15px;
+    display:flex ;
+    justify-content: space-around;
+}
+.liste-formation li{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: rgb(72,22,105);
+background: linear-gradient(90deg, rgba(72,22,105,1) 0%, rgba(149,20,179,0.804359243697479) 34%, rgba(223,204,230,0.8239670868347339) 96%);
 }
 
+
 /* Contenu compétences */
+
+
+
 .competences-langages{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
-.Langages{
-    max-width: 400px;
-    height: 400px;
+.competences-metiers{
     display: flex;
     flex-direction: column;
+    
 }
+
 .image-langage{
     width: 100px;
     height: 100px;
@@ -191,13 +271,29 @@ article li{
 #java{
     background-color: white;
 }
-table{
-    margin: 5px;
-    background-color: #6D5EFF;
-    border-radius: 20px;
-}
+
 
 /* Contenu projet */
+.cards{
+    margin: 10px;
+    padding: 10px;
+    max-width:1500px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+.card{
+    max-width: 400px;
+    
+}
+.card-img-top{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
 
 .logo-github{
 width: 50px;
@@ -220,7 +316,7 @@ justify-self: center;
 
 fieldset{
     
-     margin: 5px;
+    margin: 5px;
     align-self: center;
     display: flex;
     justify-content: center;
