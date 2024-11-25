@@ -5,6 +5,9 @@
     padding:0%;
 }
 html{
+    display: flex;
+    justify-self: center;
+    align-self: center;
     padding: 0;
     margin: 0;
 }
@@ -14,7 +17,7 @@ body{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-image:url(Asset/Background.png) ;
     background-size: cover;
-    gap: 2px;
+    gap: 20px;
 }
 .contener{
     padding: 1px;
@@ -60,6 +63,9 @@ h4{
 }
 article li{
     margin: 10px;
+}
+section{
+    height: 100%;
 }
 .pied{
     height: 250px;
@@ -241,6 +247,7 @@ opacity: 1;
     padding: 15px;
     display:flex ;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .liste-formation li{
     width: 200px;
@@ -280,7 +287,7 @@ background: linear-gradient(90deg, rgba(72,22,105,1) 0%, rgba(149,20,179,0.80435
 .cards{
     margin: 10px;
     padding: 10px;
-    max-width:1500px;
+    max-width:1100px;
     max-height: 800px;
     display: flex;
     flex-direction: row;
@@ -290,12 +297,14 @@ background: linear-gradient(90deg, rgba(72,22,105,1) 0%, rgba(149,20,179,0.80435
 }
 .card{
     max-width: 350px;
+    max-height: 350px;
+    
     
 }
 .card-img-top{
     width: 100%;
     height: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 .logo-github{
@@ -380,6 +389,8 @@ footer a{
     .section-aside{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .lateral-barre{
         min-width: 100%;
@@ -398,12 +409,12 @@ footer a{
     }
     .articles{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column-reverse;  
     }
-    table{
-        display: none;
+    .card{
+        max-width: 200px;
     }
+
     #article-langage{
         display: none;
     }
