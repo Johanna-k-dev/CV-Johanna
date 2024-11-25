@@ -168,8 +168,11 @@ article h3{
     
 }
 .image-article{
-    border-radius: 100%;
+
+    object-fit:cover;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     width: 300px;
+    height: 300px;
     
 }
 
@@ -286,7 +289,7 @@ background: linear-gradient(90deg, rgba(72,22,105,1) 0%, rgba(149,20,179,0.80435
    
 }
 .card{
-    max-width: 400px;
+    max-width: 350px;
     
 }
 .card-img-top{
