@@ -267,8 +267,10 @@ transition:background-color 0.5s ease, transform 0.5s ease ;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,11,154,1) 45%, rgba(7,88,190,1) 100%);
 }
 
-#pellet-li-1:hover  {
-    background-color: #9514B3 ;
+#li-formation-1:hover,#li-formation-2:hover,#li-formation-3:hover,#li-formation-4:hover,#li-formation-5:hover  {
+   
+    transform: scale(1.2); 
+    transition: transform 0.5s ease ;
 }
 
 /* Contenu compétences */
@@ -323,17 +325,26 @@ transition:background-color 0.5s ease, transform 0.5s ease ;
     object-fit: contain;
 }
 
-.logo-github{
-width: 50px;
-height: 50px;
-display: flex;
-justify-self: center;
+#logo-github{
+    margin: 25px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-self: center; 
+    justify-content: center;
+    align-items: center;  
+    border:#9514B3 3px solid; 
+    background: rgb(109,94,255);
+    background: rgb(109,94,255);
+    background: linear-gradient(90deg, rgba(109,94,255,1) 18%, rgba(149,20,179,1) 45%, rgba(128,199,255,1) 79%);    border-radius: 50%;
+
 }
 
 #logo-github:hover{
-    box-shadow: #6D5EFF;
-}
+    -webkit-box-shadow: 0px 0px 18px 12px #80C7FF, 0px 0px 18px 28px #F1D3FA, 0px 0px 18px 31px rgba(149,20,179,0.75), 0px 0px 18px 32px rgba(109,94,255,0.75); 
+box-shadow: 0px 0px 18px 12px #80C7FF, 0px 0px 18px 28px #F1D3FA, 0px 0px 18px 31px rgba(149,20,179,0.75), 0px 0px 18px 32px rgba(109,94,255,0.75);
 
+}
 
 /* Formulaire de contact */
 
@@ -343,12 +354,13 @@ justify-self: center;
     justify-content: center;
 }
 
-fieldset{
+form fieldset{
     
     margin: 5px;
     align-self: center;
     display: flex;
     justify-content: center;
+    
     border-radius: 15px;
 
 }
@@ -367,6 +379,7 @@ form{
     justify-content: space-around;
    
 }
+
 form label{
     margin: 5px;
     color: #f1d3fa;
